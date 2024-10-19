@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      input {
+        margin: 5px;
+      }
+
+      img {
+        object-fit: cover;
+        height: 100%;
+        width: 30%;
+        background-color: white;
+        border-radius: 9px 0px 0px 9px;
+      }
+
+      .result {
+        width: 100%;
+        height: 150px;
+        background-color: rgb(30, 30, 30);
+        color: white;
+        display: flex;
+        border-radius: 9px;
+      }
+
+      .text {
+        margin-left: 20px;
+        line-height: 4px;
+      }
+
+      .f1 {
+        font-size: 0.6rem;
+      }
+
+      .f2 {
+        font-size: 0.8rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .d-flex {
+        display: flex;
+      }
+
+      #pHowOld {
+        margin-left: 10px;
+      }
+
+      .duration {
+        position: relative;
+        right: 63px;
+        top: 37px;
+        background: rgba(0, 0, 0, 0.739);
+        font-size: 0.7rem;
+        height: 13px;
+        width: 40px;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="File" id="vThumbnail" placeholder="Enter video tumbnail" />
+      <input type="text" id="vName" placeholder="Enter video name" />
+      <input type="text" id="cName" placeholder="Enter channel name" />
+      <input type="number" id="views" placeholder="Enter number of views" />
+      <input type="text" id="howOld" placeholder="How old video" />
+      <input type="text" id="vlength" placeholder="Enter video duration" />
+      <input type="submit" id="btn" />
+    </div>
+    <div class="result">
+      <img id="pVThumbnail" src="" />
+      <div class="text">
+        <h2 id="pVName">Video Title</h2>
+        <div class="d-flex">
+          <p id="pViews" class="f1">Number Of Views</p>
+          <p id="pHowOld" class="f1">How Old</p>
+        </div>
+        <p id="pCName" class="f2">Channel Name</p>
+        <div class="duration">
+          <p id="pVlength">00:00:00</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
